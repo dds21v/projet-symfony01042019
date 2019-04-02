@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 {% block body %}
     <h1>Page d'accueil</h1>
-    <p>Welcome friends!</p>
+    <a href="{{ path('app_session_ajout') }}" class="btn btn-primary">Ajout d'un article</a>
+    <a href="{{ path('app_panier') }}" class="btn btn-outline-info">Panier</a>
 {% endblock %}
 
