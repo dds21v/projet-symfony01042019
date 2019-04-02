@@ -6,4 +6,9 @@ app_contact:
     path: /contact
     controller: App\Controller\ContactController::contact
 
-
+app_page2:
+    path: /page2/{id}
+    controller: App\Controller\BlogController::page2
+    requirements:
+        id: '[0-9]+'
+    methods: GET
