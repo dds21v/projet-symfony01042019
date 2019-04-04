@@ -27,9 +27,9 @@ class SessionController extends AbstractController
     /**
      * @Route("/panier", name="app_panier")
      * @param SessionInterface $session
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @return Response
      */
-    public function panier(SessionInterface $session): \Symfony\Component\HttpFoundation\Response
+    public function panier(SessionInterface $session): Response
     {
         //var_dump($session->get('nbArticles'));
         $nbArticles = $session->get('nbArticles', 0);
